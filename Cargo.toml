@@ -1,0 +1,15 @@
+[package]
+name = "rust-python-experiment"
+version = "0.1.0"
+authors = ["Sven-Hendrik Haase <svenstaro@gmail.com>"]
+
+[lib]
+name = "myrustpylib"
+crate-type = ["cdylib"]
+
+[dependencies]
+rayon = "1.0"
+
+[dependencies.pyo3]
+version = "0.2"
+features = ["extension-module"]
